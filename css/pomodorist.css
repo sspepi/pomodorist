@@ -24,7 +24,7 @@ body {
   -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-  background-color: tomato;
+  background-color: red;
   opacity: 0.6;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 #countdown {
-  font-size: 80px;
+  font-size: 77px;
 }
 
 .time-box {
@@ -69,12 +69,10 @@ body {
   margin: 0.5em auto 0em auto;
 }
 
-/*set user select to none: ensures no highlighting in case the user clicks a bunch of times */
+
 .signs:hover {
   cursor: pointer;
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
+  -webkit-user-select: none; 
   user-select: none;
 }
 
@@ -82,7 +80,7 @@ body {
   overflow: auto;
   width: 24%;
   height: 14%;
-  background: darkgrey;
+  background: black;
   color: white;
   outline: 0;
   white-space: nowrap;
@@ -115,4 +113,17 @@ body {
 }
 #reset {
   margin: 0.5em 0em 0em 0.7em;
+}
+
+.center{
+  margin: auto;
+    width: 50%;
+    padding: 1px
+
+}
+
+p.test{
+  width: 11em; 
+    border: 1px solid #000000;
+    word-wrap: break-word;
 }
