@@ -1,37 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Hello, world!</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+<head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <title>Hello, world!</title>
+
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"  />
+    <link href="css/pomodorist.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
+    <title>Pomodoro Timer</title>
   </head>
   <body>
-    <h1>Hello Pomodoro timer</h1>
+    <div id="main" class="session-mode">
+      <div id="title" class="text"></div>
+      <div class="countdown-wrapper">
+          <span id="countdown"></span>
+      </div>
 
+      <div id="startPause" class="button">
+        <p id="startPauseText" class="button-text text">Start</p>
+      </div>
+      <div id="reset" class="button">
+        <p class="button-text text">Reset</p>
+      </div>
 
-    <div id="message">Let's Get Started</div>
-<div id="timer">
-  <span id="minutes">25</span>
-  <span id="middle">:</span>
-  <span id="seconds">00</span>
-</div>
+      <div class="session-time time-box">
+        <p class="text">Session Length</p>
+        <span id="sessionMinus" class="signs">-</span>
+        <span id="sessionLength"></span>
+        <span id="sessionPlus" class="signs">+</span>
+      </div>
 
-<div id="buttons">
-  <button id="start">Start</button>
-  <button id="stop">Stop</button>
-  <button id="reset">Reset</button>
-</div>
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <div class="break-time time-box">
+        <p class="text">Break Length</p>
+        <span id="breakMinus" class="signs">-</span>
+        <span id="breakLength"></span>
+        <span id="breakPlus" class="signs">+</span>
+      </div>
+    </div>
+    <script src="js/script.js"></script>>
   </body>
+    
+
+      
+    </body>
 </html>
